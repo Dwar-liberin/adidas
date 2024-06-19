@@ -1,401 +1,338 @@
-const _0x373527 = _0x3012;
-(function (_0x4ee22b, _0x449265) {
-    const _0xddff18 = _0x3012, _0x16bc1b = _0x4ee22b();
-    while (!![]) {
-        try {
-            const _0x23196d = parseInt(_0xddff18(0xd0)) / (-0x200f + 0x2 * -0x47f + 0x290e) * (parseInt(_0xddff18(0xdc)) / (0x663 + 0x56 * -0xb + -0x1 * 0x2af)) + parseInt(_0xddff18(0x9a)) / (0x859 + -0xd0f + 0x4b9) + parseInt(_0xddff18(0xf7)) / (0x2 * -0xd0a + 0x2520 + -0x2 * 0x584) * (-parseInt(_0xddff18(0xf6)) / (0x4 * -0x251 + 0x97 * 0x31 + -0x139e)) + parseInt(_0xddff18(0xdd)) / (0x56f * -0x7 + 0x5a3 + 0x206c) * (-parseInt(_0xddff18(0xda)) / (-0x1 * 0x114d + -0x270e + 0x407 * 0xe)) + -parseInt(_0xddff18(0x11f)) / (-0x2dc + -0xf * 0x1ff + -0x29 * -0xcd) + parseInt(_0xddff18(0xe1)) / (0x2326 * -0x1 + -0x20bc + -0x1 * -0x43eb) * (parseInt(_0xddff18(0xab)) / (-0x1b13 + -0x16 * -0xbf + 0xab3)) + parseInt(_0xddff18(0x12f)) / (-0x3f1 * -0x2 + 0x12b9 + -0x1a90);
-            if (_0x23196d === _0x449265)
-                break;
-            else
-                _0x16bc1b['push'](_0x16bc1b['shift']());
-        } catch (_0x4c4093) {
-            _0x16bc1b['push'](_0x16bc1b['shift']());
-        }
+
+    import {
+      loadGLTF,
+      loadTexture,
+      loadTextures,
+      loadVideo,
+    } from "https://cdn.jsdelivr.net/gh/Dwar-liberin/dwar-lib/libs/loader.js";
+
+    import { createChromaMaterial } from "https://cdn.jsdelivr.net/gh/Dwar-liberin/dwar-lib/libs/chroma-video.js" 
+    import TWEEN from "https://cdn.jsdelivr.net/npm/@tweenjs/tween.js@18.6.4/dist/tween.esm.js";
+      let analytics=null
+  const animationManager = new AnimationManager();
+
+      const isIOS = navigator.appVersion.indexOf("Mac") != -1 ? true : false;
+      try {
+
+        analytics = new Analytics(
+          {
+              appName: "DwAR",
+              customerId: "4",
+              campaignName: "Adidas ",
+              serverUrl: "https://staging.lttl.in/event"
+          }
+       );
+
+      Analytics.active = true;
+
+      } catch(e) {
+        console.log("Err", e.message)
+      }
+      
+  
+
+    const THREE = window.MINDAR.IMAGE.THREE;
+
+    
+    async function loadUnmuteLogo() {
+      const muteIconGeo = new THREE.CircleGeometry(0.5, 32);
+      const muteIconTexture = await loadTexture("assets/mute.png");
+      const muteIconMaterial = new THREE.MeshBasicMaterial({
+        map: muteIconTexture,
+      });
+    
+      const muteIconMesh = new THREE.Mesh(muteIconGeo, muteIconMaterial);
+      muteIconMesh.scale.set(0.1, 0.1);
+      muteIconMesh.position.set(0, -0.5, 0.3);
+    
+      muteIconMesh.userData.clickable = true;
+    
+      return muteIconMesh;
     }
-}(_0x2514, 0x1e284 + 0x1 * -0x17b405 + 0x2472bd));
-import {
-    loadGLTF,
-    loadTexture,
-    loadTextures,
-    loadVideo
-} from 'https://cdn.jsdelivr.net/gh/Dwar-liberin/dwar-lib/libs/loader.js';
-function _0x2514() {
-    const _0x3fd192 = [
-        'sZmKD',
-        'VideoTextu',
-        'body',
-        'muted',
-        'assets/mut',
-        'dgh.png',
-        'clientY',
-        'clickable',
-        'mvxCb',
-        '601562FYDJhs',
-        'vBFvd',
-        'addAnchor',
-        '.js/exampl',
-        'oad',
-        'era',
-        'regular.ty',
-        'etry',
-        'DwAR',
-        'QZgMI',
-        '1463yamglP',
-        'GemYL',
-        '2zZWpYp',
-        '30678oDHQKX',
-        'rotation',
-        '.net/gh/mr',
-        '110.158.27',
-        '1510398BTkrUn',
-        'DGWrc',
-        'rkMHs',
-        'eventName',
-        'https://cd',
-        'IGCxP',
-        'click',
-        'orld\x20Cup\x20_',
-        'up\x201261156',
-        'appVersion',
-        'ternationa',
-        '\x20Cricket\x20W',
-        '644.png',
-        'render',
-        'get.mind',
-        'active',
-        '645.png',
-        'N0886.html',
-        'onTargetLo',
-        'setAnimati',
-        'start',
-        '5fUAldf',
-        '6170092pdxWNv',
-        'trackClick',
-        'Mac',
-        'Hemisphere',
-        'ZCbRJ',
-        'ueInD',
-        'message',
-        'Loaded',
-        'Raycaster',
-        'set',
-        'yGQgL',
-        'idiJl',
-        'fbZuh',
-        'FontLoader',
-        'assets/asf',
-        'es/fonts/h',
-        'gScreen',
-        '/event',
-        'showLoadin',
-        'innerWidth',
-        'Adidas\x20',
-        'load',
-        'sendQueryP',
-        'MindARThre',
-        'trackMarke',
-        'NrcUz',
-        'FQRKH',
-        'children',
-        'wgvEQ',
-        '#scanning-',
-        'gTUvs',
-        'play',
-        'BCCI.mp4',
-        'mtBOe',
-        'clientX',
-        'location',
-        'smzhp',
-        'UtURz',
-        'try',
-        'tbmWM',
-        '14214304GpzBCy',
-        'Light',
-        'parent',
-        '\x20adidas\x20x\x20',
-        'object',
-        'iekZS',
-        'HeITh',
-        'gprSW',
-        'THREE',
-        'onLoop',
-        'RWfZP',
-        'assets/T20',
-        'oOCrN',
-        'w.adidas.c',
-        'doob/three',
-        'pause',
-        '29784777LVfpaH',
-        'aram',
-        'e.png',
-        'indexOf',
-        'UOvYe',
-        'rScanned',
-        'VqLaN',
-        'KWTAc',
-        'iWYPF',
-        'group',
-        'NRmUY',
-        'stener',
-        'onTargetFo',
-        'QtJDm',
-        'Err',
-        'Mesh',
-        'und',
-        '5105385OVqRgL',
-        'position',
-        'ket-t20-in',
-        'userData',
-        'https://ww',
-        'trackPageL',
-        'assets/tar',
-        'DOMContent',
-        'setFromCam',
-        'fySon',
-        'pDZZS',
-        'loop',
-        'overlay',
-        'IMAGE',
-        'Atutr',
-        'log',
-        'addEventLi',
-        '20vuRQac',
-        'oTSKa',
-        'href',
-        'MeshBasicM',
-        'aterial',
-        'ana',
-        'india-cric',
-        'elvetiker_',
-        'assets/Gro',
-        'Vector2',
-        'n.jsdelivr',
-        'peface.jso',
-        'innerHeigh',
-        'scale',
-        'bjects',
-        'intersectO',
-        'CircleGeom',
-        'MINDAR',
-        'l-jersey/J',
-        'unknown',
-        'https://3.',
-        'length',
-        'hlOsj',
-        'o.in/fw24-',
-        'abqRP',
-        'PlaneGeome',
-        'remove',
-        'add'
-    ];
-    _0x2514 = function () {
-        return _0x3fd192;
-    };
-    return _0x2514();
+
+    
+
+    
+ function executeAnimation(animation, mesh) {
+  console.log('animation', animation)
+  const { name, state, value, duration, delay } = animation;
+
+  switch (name) {
+    case "slide":
+      if (state === "left") {
+        animationManager.animateSlide(mesh, null, duration, null, value, delay);
+      }
+      else if (state === "right") {
+        animationManager.animateSlide(mesh, null, duration, value, state, delay);
+      } else if (state === "up") {
+        animationManager.animateSlideUp(mesh, duration, value, delay);
+      } else {
+        animationManager.animateSlideDown(mesh, duration, value, delay);
+
+      }
+      break;
+    case "fade":
+      if (state == "in") {
+        animationManager.animateFadeIn(mesh, duration, delay);
+      } else {
+        animationManager.animateFadeOut(mesh, duration, delay);
+      }
+      break;
+    case "scale":
+      if (state == "up") animationManager.animateScaleUp(mesh, value, duration, null, delay);
+      else animationManager.animateScaleDown(mesh, value, duration, null, delay);
+      break;
+    case "bounce":
+      animationManager.animateBounce(mesh, "z", value, duration, delay); // Assuming "z" axis for bounce
+      break;
+    default:
+      console.error("Unknown animation");
+      break;
+  }
 }
-import { createChromaMaterial } from 'https://cdn.jsdelivr.net/gh/Dwar-liberin/dwar-lib/libs/chroma-video.js';
-let analytics = null;
-try {
-    analytics = new Analytics({
-        'appName': _0x373527(0xd8),
-        'customerId': '4',
-        'campaignName': _0x373527(0x10b),
-        'serverUrl': _0x373527(0xbf) + _0x373527(0xe0) + _0x373527(0x108)
-    }), Analytics[_0x373527(0xf0)] = !![];
-} catch (_0x3f9a64) {
-    console[_0x373527(0xa9)](_0x373527(0x97), _0x3f9a64[_0x373527(0xfd)]);
-}
-function _0x3012(_0x59709d, _0xf6b1fd) {
-    const _0x291391 = _0x2514();
-    return _0x3012 = function (_0x457f94, _0x201fc8) {
-        _0x457f94 = _0x457f94 - (0x13c6 + -0xeb8 * 0x2 + 0x9 * 0x123);
-        let _0x75ce5e = _0x291391[_0x457f94];
-        return _0x75ce5e;
-    }, _0x3012(_0x59709d, _0xf6b1fd);
-}
-const THREE = window[_0x373527(0xbc)][_0x373527(0xa7)][_0x373527(0x127)];
-async function loadUnmuteLogo() {
-    const _0x544066 = _0x373527, _0x4b52f3 = {
-            'yGQgL': function (_0x316069, _0x3eb835) {
-                return _0x316069(_0x3eb835);
-            },
-            'mvxCb': _0x544066(0xcb) + _0x544066(0x131)
-        }, _0x1f7b9a = new THREE[(_0x544066(0xbb)) + (_0x544066(0xd7))](-0x12ba + -0x254d + 0x3 * 0x12ad + 0.5, 0x1238 + -0x1a17 + 0x7ff * 0x1), _0x43e18b = await _0x4b52f3[_0x544066(0x101)](loadTexture, _0x4b52f3[_0x544066(0xcf)]), _0x44ea94 = new THREE[(_0x544066(0xae)) + (_0x544066(0xaf))]({ 'map': _0x43e18b }), _0x5e1f8c = new THREE[(_0x544066(0x98))](_0x1f7b9a, _0x44ea94);
-    return _0x5e1f8c[_0x544066(0xb8)][_0x544066(0x100)](0xfd * -0xb + 0x1f88 * 0x1 + -0x29 * 0x81 + 0.1, 0x1 * -0x347 + 0x931 * 0x1 + -0x5ea + 0.1), _0x5e1f8c[_0x544066(0x9b)][_0x544066(0x100)](0x23ac + 0x16fe + -0x3aaa, -(0x29 * -0xa0 + 0x3 * -0x43c + 0x2654 + 0.5), -0x3f8 + 0x13 * 0x137 + 0x2bb * -0x7 + 0.3), _0x5e1f8c[_0x544066(0x9d)][_0x544066(0xce)] = !![], _0x5e1f8c;
-}
-document[_0x373527(0xaa) + _0x373527(0x94)](_0x373527(0xa1) + _0x373527(0xfe), () => {
-    const _0x10239e = _0x373527, _0x111d8f = {
-            'abqRP': function (_0x24f5b5, _0x554f87) {
-                return _0x24f5b5 - _0x554f87;
-            },
-            'Atutr': function (_0x12d8ec, _0x37c19f) {
-                return _0x12d8ec * _0x37c19f;
-            },
-            'ZCbRJ': function (_0xaef2be, _0x50633a) {
-                return _0xaef2be / _0x50633a;
-            },
-            'pDZZS': function (_0x467761, _0x1e75ba) {
-                return _0x467761 + _0x1e75ba;
-            },
-            'idiJl': function (_0x264dd8, _0x29041d) {
-                return _0x264dd8 * _0x29041d;
-            },
-            'oTSKa': function (_0x83bbc6, _0x162ef7) {
-                return _0x83bbc6 > _0x162ef7;
-            },
-            'QtJDm': _0x10239e(0xe7),
-            'IGCxP': _0x10239e(0x97),
-            'vBFvd': function (_0x326f0e, _0x3664cb) {
-                return _0x326f0e != _0x3664cb;
-            },
-            'gTUvs': _0x10239e(0xf9),
-            'iekZS': function (_0x2a4c3e, _0x504132) {
-                return _0x2a4c3e === _0x504132;
-            },
-            'FQRKH': function (_0x19fd61, _0x417307) {
-                return _0x19fd61 === _0x417307;
-            },
-            'QZgMI': function (_0xd9c525, _0x289ed2, _0x444e38) {
-                return _0xd9c525(_0x289ed2, _0x444e38);
-            },
-            'UOvYe': _0x10239e(0xe5) + _0x10239e(0xb5) + _0x10239e(0xdf) + _0x10239e(0x12d) + _0x10239e(0xd3) + _0x10239e(0x106) + _0x10239e(0xb2) + _0x10239e(0xd6) + _0x10239e(0xb6) + 'n',
-            'iWYPF': function (_0x2e794d, _0x8c0082) {
-                return _0x2e794d(_0x8c0082);
-            },
-            'KWTAc': function (_0x68d96, _0x1befa3) {
-                return _0x68d96(_0x1befa3);
-            },
-            'HeITh': _0x10239e(0x9e) + _0x10239e(0x12c) + _0x10239e(0xc2) + _0x10239e(0xb1) + _0x10239e(0x9c) + _0x10239e(0xeb) + _0x10239e(0xbd) + _0x10239e(0xf2),
-            'oOCrN': _0x10239e(0xa0) + _0x10239e(0xef),
-            'NRmUY': _0x10239e(0x114) + _0x10239e(0xa6),
-            'tbmWM': function (_0x5fa6c5) {
-                return _0x5fa6c5();
-            },
-            'UtURz': _0x10239e(0xb3) + _0x10239e(0xe9) + _0x10239e(0xf1),
-            'smzhp': _0x10239e(0xbe),
-            'GemYL': _0x10239e(0xb3) + _0x10239e(0xe9) + _0x10239e(0xed),
-            'mtBOe': _0x10239e(0x105) + _0x10239e(0xcc),
-            'sZmKD': _0x10239e(0x12a) + _0x10239e(0xec) + _0x10239e(0xe8) + _0x10239e(0x122) + _0x10239e(0x117),
-            'wgvEQ': function (_0x30009b, _0x4cb6a0) {
-                return _0x30009b != _0x4cb6a0;
-            },
-            'fySon': _0x10239e(0xb0),
-            'VqLaN': _0x10239e(0x10c),
-            'rkMHs': function (_0x1025b2) {
-                return _0x1025b2();
-            }
-        };
+    
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+    // DwAR Analytics
     try {
-        console[_0x10239e(0xa9)](_0x111d8f[_0x10239e(0xa3)], analytics), analytics && (console[_0x10239e(0xa9)](_0x111d8f[_0x10239e(0xa3)], analytics), analytics[_0x10239e(0x9f) + _0x10239e(0xd4)]({
-            'eventType': _0x111d8f[_0x10239e(0x135)],
-            'payload': !![]
-        }), analytics[_0x10239e(0x10d) + _0x10239e(0x130)]());
-    } catch (_0xaffdee) {
-        console[_0x10239e(0xa9)]('e', _0xaffdee[_0x10239e(0xfd)]);
-    }
-    async function _0x224df2() {
-        const _0x33d8c3 = _0x10239e, _0x3da2a0 = {
-                'hlOsj': _0x111d8f[_0x33d8c3(0x133)],
-                'RWfZP': function (_0xee54de, _0x595890) {
-                    const _0x32c658 = _0x33d8c3;
-                    return _0x111d8f[_0x32c658(0x91)](_0xee54de, _0x595890);
-                },
-                'fbZuh': function (_0x2c1863, _0x313fb0) {
-                    const _0x59f2d7 = _0x33d8c3;
-                    return _0x111d8f[_0x59f2d7(0x136)](_0x2c1863, _0x313fb0);
-                },
-                'ueInD': _0x111d8f[_0x33d8c3(0x125)],
-                'DGWrc': _0x111d8f[_0x33d8c3(0xe6)]
-            };
-        let _0xf74ece;
-        const _0x1cab4a = new window[(_0x33d8c3(0xbc))][(_0x33d8c3(0xa7))][(_0x33d8c3(0x10e)) + 'e']({
-                'container': document[_0x33d8c3(0xc9)],
-                'imageTargetSrc': _0x111d8f[_0x33d8c3(0x12b)],
-                'uiLoading': _0x111d8f[_0x33d8c3(0x93)]
-            }), {
-                renderer: _0x508e43,
-                scene: _0x878c8c,
-                camera: _0x426eed
-            } = _0x1cab4a, _0x43a193 = _0x1cab4a[_0x33d8c3(0xd2)](0x2686 + 0x794 + -0x2 * 0x170d), _0x288296 = new THREE[(_0x33d8c3(0xfa)) + (_0x33d8c3(0x120))](-0xac26ff + 0x2fb706 + 0x17c6ff8 * 0x1, 0x1416f4a * 0x1 + 0x646210 + -0xea155b * 0x1, -0x2 * -0x9dc + 0x8ea + -0x1ca1);
-        _0x878c8c[_0x33d8c3(0xc6)](_0x288296);
-        const _0x3e04e7 = () => {
-                const _0x4387fb = {
-                    'gprSW': function (_0x55ffff, _0x59eb27) {
-                        const _0x1db1c3 = _0x3012;
-                        return _0x3da2a0[_0x1db1c3(0x129)](_0x55ffff, _0x59eb27);
-                    },
-                    'NrcUz': function (_0x108bd4, _0x507de4) {
-                        const _0x24559c = _0x3012;
-                        return _0x3da2a0[_0x24559c(0x103)](_0x108bd4, _0x507de4);
-                    }
-                };
-                return new Promise((_0x4e3245, _0x52f118) => {
-                    const _0x34df2a = _0x3012, _0x37457a = new THREE[(_0x34df2a(0x104))]();
-                    _0x37457a[_0x34df2a(0x10c)](_0x3da2a0[_0x34df2a(0xc1)], _0x34573d => {
-                        const _0x5ecdd3 = _0x34df2a;
-                        _0x4387fb[_0x5ecdd3(0x126)](_0x4e3245, _0x34573d);
-                    }, undefined, _0x6fc077 => {
-                        const _0x182952 = _0x34df2a;
-                        _0x4387fb[_0x182952(0x110)](_0x52f118, _0x6fc077);
-                    });
-                });
-            }, _0x1e41d2 = await _0x111d8f[_0x33d8c3(0x11e)](_0x3e04e7), _0x188b79 = new THREE[(_0x33d8c3(0xc4)) + (_0x33d8c3(0x11d))](-0x2207 + 0x639 + 0x1bcf, 0x1 * 0x7f7 + -0x189b * -0x1 + -0x2f6 * 0xb + 0.52), _0x315628 = await _0x111d8f[_0x33d8c3(0x91)](loadTexture, _0x111d8f[_0x33d8c3(0x11c)]), _0x4cde32 = new THREE[(_0x33d8c3(0xae)) + (_0x33d8c3(0xaf))]({ 'map': _0x315628 }), _0xb54b27 = new THREE[(_0x33d8c3(0x98))](_0x188b79, _0x4cde32);
-        _0xb54b27[_0x33d8c3(0xb8)][_0x33d8c3(0x100)](-0x72f + 0x97c + -0x24d + 0.4, -0x2 * 0xb77 + 0x16fe + -0x10 + 0.4, 0xa * -0xbc + -0x379 * 0x9 + -0x3 * -0xcde), _0xb54b27[_0x33d8c3(0x9b)][_0x33d8c3(0x100)](0x3 * 0x9bd + 0xe * -0x245 + 0x28f + 0.4, -(-0x133 * -0x3 + -0x17af * -0x1 + -0x1b48 + 0.6), -0x1 * -0x4aa + 0x1c91 + -0x213b * 0x1 + 0.1), _0xb54b27[_0x33d8c3(0xde)][_0x33d8c3(0x100)](-(-0x6 * -0x34f + 0x109 + -0x14e3 + 0.001), 0x16d9 + 0x1226 * 0x1 + 0x28ff * -0x1, -0x15df + 0xb * 0x22a + -0x5 * 0x63), _0xb54b27[_0x33d8c3(0x9d)][_0x33d8c3(0xce)] = !![], _0xb54b27[_0x33d8c3(0x9d)][_0x33d8c3(0xe4)] = _0x111d8f[_0x33d8c3(0x11b)];
-        const _0x42dd90 = new THREE[(_0x33d8c3(0xc4)) + (_0x33d8c3(0x11d))](-0x1e31 + -0x2ba + 0x20ec, -0x253e + -0x1365 + -0x1 * -0x38a3 + 0.52), _0x2f8e4b = await _0x111d8f[_0x33d8c3(0x91)](loadTexture, _0x111d8f[_0x33d8c3(0xdb)]), _0xdeedc2 = new THREE[(_0x33d8c3(0xae)) + (_0x33d8c3(0xaf))]({ 'map': _0x2f8e4b }), _0x36eb08 = new THREE[(_0x33d8c3(0x98))](_0x42dd90, _0xdeedc2);
-        _0x36eb08[_0x33d8c3(0xb8)][_0x33d8c3(0x100)](-0x1272 + 0xa36 + 0x83c + 0.4, 0x23bf + 0x12bd + 0x4 * -0xd9f + 0.4, 0x1b4d + 0x7 * -0x76 + 0x1da * -0xd), _0x36eb08[_0x33d8c3(0x9b)][_0x33d8c3(0x100)](-(-0x1 * -0x14fe + -0x47 * 0xb + 0x3 * -0x5fb + 0.4), -(0x1358 + -0x19f7 * 0x1 + -0x235 * -0x3 + 0.6), 0x10ec + 0x71d + 0x3 * -0x803 + 0.1), _0x36eb08[_0x33d8c3(0xde)][_0x33d8c3(0x100)](-(-0x5d9 + -0x1cbd + 0x2296 + 0.001), -0x36e + -0x3 * 0x272 + -0x562 * -0x2, 0x1028 + 0x2 * 0xa4 + -0x1170);
-        const _0x2725a3 = new THREE[(_0x33d8c3(0xc4)) + (_0x33d8c3(0x11d))](0x1190 + -0x16af + 0x520, 0x1e77 + 0x470 * -0x1 + -0x3 * 0x8ad + 0.6185567010309279), _0x230289 = await _0x111d8f[_0x33d8c3(0x91)](loadTexture, _0x111d8f[_0x33d8c3(0x118)]), _0x19825f = new THREE[(_0x33d8c3(0xae)) + (_0x33d8c3(0xaf))]({ 'map': _0x230289 }), _0x54dc54 = new THREE[(_0x33d8c3(0x98))](_0x2725a3, _0x19825f);
-        _0x54dc54[_0x33d8c3(0xb8)][_0x33d8c3(0x100)](-0x272 + -0x1e42 + -0x3 * -0xae7, 0x124c + -0x1 * 0xa1c + 0x82f * -0x1, 0x28 * -0x7c + -0x755 * -0x4 + 0x351 * -0x3), _0x54dc54[_0x33d8c3(0x9b)][_0x33d8c3(0x100)](0x8 * 0x125 + 0x865 * -0x1 + -0xd * 0xf, 0x1266 + -0x2336 + 0x434 * 0x4, 0xe * -0x191 + 0x1a * 0x1 + 0x15d4), _0x54dc54[_0x33d8c3(0xde)][_0x33d8c3(0x100)](-(0x7 * -0x342 + 0x10b * -0x1b + -0x10fd * -0x3 + 0.001), -0x1 * 0x2169 + -0x1 * -0x173c + 0xa2d, -0x1bf9 + -0x1508 + 0x3101);
-        const _0x10152a = new THREE[(_0x33d8c3(0xc4)) + (_0x33d8c3(0x11d))](0x269f * 0x1 + -0x2261 * 0x1 + 0x43d * -0x1, -0x7 * -0x167 + -0x1d7e + 0x13ad + 0.5625), _0x24adc5 = await _0x111d8f[_0x33d8c3(0x136)](loadVideo, _0x111d8f[_0x33d8c3(0xc7)]), _0x2e83ab = new THREE[(_0x33d8c3(0xc8)) + 're'](_0x24adc5);
-        let _0x1d85a2;
-        _0x1d85a2 = new THREE[(_0x33d8c3(0xae)) + (_0x33d8c3(0xaf))]({ 'map': _0x2e83ab });
-        const _0x2a7eec = new THREE[(_0x33d8c3(0x98))](_0x10152a, _0x1d85a2);
-        _0x2a7eec[_0x33d8c3(0x9b)][_0x33d8c3(0x100)](0xc6d * 0x2 + -0x10f7 + -0x7e3, 0x3e * 0x41 + -0x12 * 0x1ab + 0x1c9 * 0x8, 0x1347 + 0xf33 + 0x3 * -0xb7e);
-        const _0x452f25 = _0x111d8f[_0x33d8c3(0x113)](navigator[_0x33d8c3(0xea)][_0x33d8c3(0x132)](_0x111d8f[_0x33d8c3(0x115)]), -(-0x1b3c + 0x156c + 0x5d1)) ? !![] : ![];
-        _0x452f25 && (_0x24adc5[_0x33d8c3(0xca)] = _0x452f25, _0xf74ece = await _0x111d8f[_0x33d8c3(0x11e)](loadUnmuteLogo), _0x43a193[_0x33d8c3(0x92)][_0x33d8c3(0xc6)](_0xf74ece)), _0x24adc5[_0x33d8c3(0xa5)] = !![], _0x2a7eec[_0x33d8c3(0xb8)][_0x33d8c3(0x100)](-0x2658 + 0xb01 * -0x1 + 0x315a + 0.19999999999999996, -0x22be + 0x5e4 * 0x1 + 0x1cdb + 0.19999999999999996, -0x29 * -0x2c + 0x197e + -0x1 * 0x2089 + 0.19999999999999996), _0x2a7eec[_0x33d8c3(0xde)][_0x33d8c3(0x100)](-(0x633 + 0xad * 0x2 + -0x78d * 0x1 + 0.002), -0xd5b * 0x2 + -0x1070 + 0x3 * 0xe62, -0x4 * 0x3a5 + 0x866 + 0x62e), document[_0x33d8c3(0xc9)][_0x33d8c3(0xaa) + _0x33d8c3(0x94)](_0x111d8f[_0x33d8c3(0x96)], _0x578e28 => {
-            const _0x5a0f5f = _0x33d8c3, _0x348cb2 = _0x111d8f[_0x5a0f5f(0xc3)](_0x111d8f[_0x5a0f5f(0xa8)](_0x111d8f[_0x5a0f5f(0xfb)](_0x578e28[_0x5a0f5f(0x119)], window[_0x5a0f5f(0x10a)]), 0x966 + -0x191 * -0x4 + -0xfa8), -0xcb1 + 0xb * -0x229 + 0x2475), _0x5ca958 = _0x111d8f[_0x5a0f5f(0xa4)](_0x111d8f[_0x5a0f5f(0x102)](-_0x111d8f[_0x5a0f5f(0xfb)](_0x578e28[_0x5a0f5f(0xcd)], window[_0x5a0f5f(0xb7) + 't']), 0x5 * 0x1d9 + -0x2cf * 0x1 + -0x66c), -0x2 * -0x11dd + -0x22 * 0xa3 + 0x4b1 * -0x3), _0xcc39f9 = new THREE[(_0x5a0f5f(0xb4))](_0x348cb2, _0x5ca958), _0x2b7d4b = new THREE[(_0x5a0f5f(0xff))]();
-            _0x2b7d4b[_0x5a0f5f(0xa2) + _0x5a0f5f(0xd5)](_0xcc39f9, _0x426eed);
-            const _0x265a34 = _0x2b7d4b[_0x5a0f5f(0xba) + _0x5a0f5f(0xb9)](_0x878c8c[_0x5a0f5f(0x112)], !![]);
-            if (_0x111d8f[_0x5a0f5f(0xac)](_0x265a34[_0x5a0f5f(0xc0)], 0x2d2 + -0x15df * 0x1 + 0x130d * 0x1)) {
-                let _0x1f4a7b = _0x265a34[0x1 * 0x192a + -0x9f * -0x3d + 0x1 * -0x3f0d][_0x5a0f5f(0x123)];
-                while (_0x1f4a7b[_0x5a0f5f(0x121)] && !_0x1f4a7b[_0x5a0f5f(0x9d)]?.[_0x5a0f5f(0xce)]) {
-                    _0x1f4a7b = _0x1f4a7b[_0x5a0f5f(0x121)];
-                }
-                if (_0x1f4a7b[_0x5a0f5f(0x9d)][_0x5a0f5f(0xce)] && analytics)
-                    try {
-                        analytics[_0x5a0f5f(0xf8)]({
-                            'eventType': _0x111d8f[_0x5a0f5f(0x96)],
-                            'payload': _0x1f4a7b[_0x5a0f5f(0x9d)][_0x5a0f5f(0xe4)]
-                        });
-                    } catch (_0x201794) {
-                        console[_0x5a0f5f(0xa9)](_0x111d8f[_0x5a0f5f(0xe6)], _0x201794);
-                    }
-                const _0x3d8f14 = _0x111d8f[_0x5a0f5f(0xd1)](navigator[_0x5a0f5f(0xea)][_0x5a0f5f(0x132)](_0x111d8f[_0x5a0f5f(0x115)]), -(0x1f23 + 0x7 * -0x1b6 + -0x8 * 0x265)) ? !![] : ![];
-                if (_0x3d8f14) {
-                    if (_0x1f4a7b[_0x5a0f5f(0x9d)][_0x5a0f5f(0xce)] && _0x111d8f[_0x5a0f5f(0x124)](_0x1f4a7b, _0xf74ece))
-                        return _0x24adc5[_0x5a0f5f(0xca)] = ![], _0x43a193[_0x5a0f5f(0x92)][_0x5a0f5f(0xc5)](_0xf74ece), !![];
-                }
-                if (_0x1f4a7b[_0x5a0f5f(0x9d)][_0x5a0f5f(0xce)])
-                    window[_0x5a0f5f(0x109) + _0x5a0f5f(0x107)]();
-                _0x1f4a7b[_0x5a0f5f(0x9d)][_0x5a0f5f(0xce)] && _0x111d8f[_0x5a0f5f(0x111)](_0x1f4a7b, _0xb54b27) && _0x111d8f[_0x5a0f5f(0xd9)](setTimeout, () => {
-                    const _0x4c34a6 = _0x5a0f5f;
-                    window[_0x4c34a6(0x11a)][_0x4c34a6(0xad)] = _0x3da2a0[_0x4c34a6(0xfc)];
-                }, -0x15c2 + -0x8bb + -0x20f * -0xf);
-            }
-        }), _0x43a193[_0x33d8c3(0x92)][_0x33d8c3(0xc6)](_0xb54b27), _0x43a193[_0x33d8c3(0x92)][_0x33d8c3(0xc6)](_0x36eb08), ![], _0x43a193[_0x33d8c3(0x92)][_0x33d8c3(0xc6)](_0x2a7eec), _0x43a193[_0x33d8c3(0x95) + _0x33d8c3(0x99)] = () => {
-            const _0x57ac68 = _0x33d8c3;
-            try {
-                analytics && analytics[_0x57ac68(0x10f) + _0x57ac68(0x134)]();
-            } catch (_0x2cec4f) {
-                console[_0x57ac68(0xa9)](_0x3da2a0[_0x57ac68(0xe2)], _0x2cec4f);
-            }
-            _0x24adc5[_0x57ac68(0x116)]();
-        }, _0x43a193[_0x33d8c3(0xf3) + 'st'] = () => {
-            const _0x5d908a = _0x33d8c3;
-            _0x24adc5[_0x5d908a(0x12e)]();
-        }, await _0x1cab4a[_0x33d8c3(0xf5)](), _0x508e43[_0x33d8c3(0xf4) + _0x33d8c3(0x128)](() => {
-            const _0x11fd20 = _0x33d8c3;
-            _0x508e43[_0x11fd20(0xee)](_0x878c8c, _0x426eed);
+      console.log("ana", analytics)
+      if(analytics){
+        console.log("ana", analytics)
+        analytics.trackPageLoad({
+          eventType: 'load',
+          payload: true,
         });
+  
+        analytics.sendQueryParam()
+      }
+     
+    } catch(e) {
+      console.log("e", e.message)
     }
-    _0x111d8f[_0x10239e(0xe3)](_0x224df2);
-});
+
+
+    async function start(){
+
+      let muteIconMesh;
+      
+      
+ 
+  const mindThree =  new window.MINDAR.IMAGE.MindARThree({
+    container: document.body,
+    imageTargetSrc: "assets/target.mind",
+    uiLoading: "#scanning-overlay",
+  });
+
+  const { renderer, scene, camera } = mindThree;
+  const anchor = mindThree.addAnchor(0);
+
+  const light = new THREE.HemisphereLight(0xffffff, 0xbbbbff, 1);
+  scene.add(light);
+
+  const loadFont = () => {
+    return new Promise((resolve, reject) => {
+      const loader = new THREE.FontLoader();
+
+      loader.load(
+        "https://cdn.jsdelivr.net/gh/mrdoob/three.js/examples/fonts/helvetiker_regular.typeface.json",
+        (font) => {
+          resolve(font); // Resolve the promise with the loaded font
+        },
+        undefined, // Progress callback (optional)
+        (error) => {
+          reject(error); // Reject the promise with the error
+        }
+      );
+    });
+  };
+
+  const font = await loadFont();
+  
+
+  
+    
+      const image_be19488a_f8d0f076_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
+   const image_be19488a_f8d0f076_texture = await loadTexture("assets/Group 1261156645.png");
+  const image_be19488a_f8d0f076_image = new THREE.MeshBasicMaterial({
+      map: image_be19488a_f8d0f076_texture,
+    });
+    const image_be19488a_f8d0f076 = new THREE.Mesh(image_be19488a_f8d0f076_iconGeometry, image_be19488a_f8d0f076_image);
+    image_be19488a_f8d0f076.scale.set(0.4, 0.4, 1);
+    image_be19488a_f8d0f076.position.set(0.38, -0.574, 0.05);
+    image_be19488a_f8d0f076.rotation.set(-0.001, 0, 0);
+    image_be19488a_f8d0f076.userData.clickable = true
+    
+    image_be19488a_f8d0f076.userData.eventName ="Buy Now"
+const image_44af366a_f16db422_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
+   const image_44af366a_f16db422_texture = await loadTexture("assets/Group 1261156644.png");
+  const image_44af366a_f16db422_image = new THREE.MeshBasicMaterial({
+      map: image_44af366a_f16db422_texture,
+    });
+    const image_44af366a_f16db422 = new THREE.Mesh(image_44af366a_f16db422_iconGeometry, image_44af366a_f16db422_image);
+    image_44af366a_f16db422.scale.set(0.4, 0.4, 1);
+    image_44af366a_f16db422.position.set(-0.38, -0.57, 0.05);
+    image_44af366a_f16db422.rotation.set(-0.001, 0, 0);
+    image_44af366a_f16db422.userData.clickable = true
+    
+    image_44af366a_f16db422.userData.eventName ="Adidas Website"
+const target_imageundefi166e9_iconGeometry = new THREE.PlaneGeometry(1, 0.6185567010309279);
+   const target_imageundefi166e9_texture = await loadTexture("assets/asfdgh.png");
+  const target_imageundefi166e9_image = new THREE.MeshBasicMaterial({
+      map: target_imageundefi166e9_texture,
+    });
+    const target_imageundefi166e9 = new THREE.Mesh(target_imageundefi166e9_iconGeometry, target_imageundefi166e9_image);
+    target_imageundefi166e9.scale.set(1, 1, 1);
+    target_imageundefi166e9.position.set(0.01, -0.01, 0.01);
+    target_imageundefi166e9.rotation.set(-0.001, 0, 0);
+    
+    
+    
+
+    const video_asset_8ffbb063b11_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
+
+    const video_asset_8ffbb063b11_Item0Video = await loadVideo("assets/T20 Cricket World Cup _ adidas x BCCI.mp4");
+
+    const video_asset_8ffbb063b11_Item0VideoTexture = new THREE.VideoTexture(
+      video_asset_8ffbb063b11_Item0Video
+    );
+
+    let video_asset_8ffbb063b11_Item0VideoMaterial
+
+      video_asset_8ffbb063b11_Item0VideoMaterial = new THREE.MeshBasicMaterial({
+          map: video_asset_8ffbb063b11_Item0VideoTexture,
+        })
+    
+     const video_asset_8ffbb063b11 = new THREE.Mesh(
+      video_asset_8ffbb063b11_planeGeometry,
+      video_asset_8ffbb063b11_Item0VideoMaterial
+    );
+
+  video_asset_8ffbb063b11.position.set(0, 0, 0.021);
+
+
+
+  if (isIOS) {
+    video_asset_8ffbb063b11_Item0Video.muted=isIOS
+    muteIconMesh = await loadUnmuteLogo();
+    anchor.group.add(muteIconMesh);
+  }
+
+  video_asset_8ffbb063b11_Item0Video.loop=true;
+  
+  video_asset_8ffbb063b11.scale.set(1.2, 1.2, 1.2);
+
+    video_asset_8ffbb063b11.rotation.set(-0.003, 0, 0);
+
+    
+  
+      
+       document.body.addEventListener("click", (e) => {
+    const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+    const mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
+
+    const mouse = new THREE.Vector2(mouseX, mouseY);
+    const raycaster = new THREE.Raycaster();
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(scene.children, true);
+
+    if (intersects.length > 0) {
+      let o = intersects[0].object;
+
+      while (o.parent && !o.userData?.clickable) {
+        o = o.parent;
+      }
+
+      if(o.userData.clickable && analytics){
+        
+        try {
+          analytics.trackClick({
+            eventType: "click",
+            payload: o.userData.eventName
+          })
+        } catch (err){
+          console.log("Err", err)
+        }
+       
+      }
+
+        if(isIOS){ 
+          if (o.userData.clickable && o === muteIconMesh) {
+            video_asset_8ffbb063b11_Item0Video.muted=false
+    
+            anchor.group.remove(muteIconMesh);
+            return true;
+          }
+        }
+
+
+      // if button is clickable then loading screen is show. And when user redirect to the screen loader automatically gone because script is change.
+      
+      if (o.userData.clickable) window.showLoadingScreen();
+
+      
+      if (o.userData.clickable && o === image_be19488a_f8d0f076) {
+        setTimeout(()=>{
+          window.location.href = "https://www.adidas.co.in/fw24-india-cricket-t20-international-jersey/JN0886.html"
+        },100)
+        }
+      
+
+      if (o.userData.clickable && o === image_44af366a_f16db422) {
+        setTimeout(()=>{
+          window.location.href = "https://www.adidas.co.in/"
+        },100)
+        }
+      
+      }
+
+    })
+    
+      
+    anchor.group.add(image_be19488a_f8d0f076)
+anchor.group.add(image_44af366a_f16db422)
+
+anchor.group.add(video_asset_8ffbb063b11)
+
+
+    anchor.onTargetFound = () => {
+      try {
+        if(analytics){
+          analytics.trackMarkerScanned();
+        }
+      } catch(e) {
+        console.log("Err", e)
+      }
+
+            
+
+
+
+
+     
+      video_asset_8ffbb063b11_Item0Video.play();
+    };
+
+
+    anchor.onTargetLost = () => {
+       video_asset_8ffbb063b11_Item0Video.pause();
+
+        
+
+
+
+    }
+    
+    
+      
+    await mindThree.start();
+    renderer.setAnimationLoop(() => {
+      renderer.render(scene, camera);
+       TWEEN.update();
+    });
+    
+    }
+    start();
+    })
+    
+    
