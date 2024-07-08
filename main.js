@@ -152,77 +152,77 @@
 
   
     
-      const image_be19488a_f8d1161a_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
-   const image_be19488a_f8d1161a_texture = await loadTexture("assets/Group 1261156645.png");
-  const image_be19488a_f8d1161a_image = new THREE.MeshBasicMaterial({
-      map: image_be19488a_f8d1161a_texture,
+      const image_be19488a_f8db5526_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
+   const image_be19488a_f8db5526_texture = await loadTexture("assets/Group 1261156645.png");
+  const image_be19488a_f8db5526_image = new THREE.MeshBasicMaterial({
+      map: image_be19488a_f8db5526_texture,
     });
-    const image_be19488a_f8d1161a = new THREE.Mesh(image_be19488a_f8d1161a_iconGeometry, image_be19488a_f8d1161a_image);
-    image_be19488a_f8d1161a.scale.set(0.4, 0.4, 1);
-    image_be19488a_f8d1161a.position.set(0.38, -0.574, 0.05);
-    image_be19488a_f8d1161a.rotation.set(-0.001, 0, 0);
-    image_be19488a_f8d1161a.userData.clickable = true
+    const image_be19488a_f8db5526 = new THREE.Mesh(image_be19488a_f8db5526_iconGeometry, image_be19488a_f8db5526_image);
+    image_be19488a_f8db5526.scale.set(0.4, 0.4, 1);
+    image_be19488a_f8db5526.position.set(0.38, -0.574, 0.05);
+    image_be19488a_f8db5526.rotation.set(-0.001, 0, 0);
+    image_be19488a_f8db5526.userData.clickable = true
     
-    image_be19488a_f8d1161a.userData.eventName ="Buy Now"
-const image_44af366a_f16a323c_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
-   const image_44af366a_f16a323c_texture = await loadTexture("assets/Group 1261156644.png");
-  const image_44af366a_f16a323c_image = new THREE.MeshBasicMaterial({
-      map: image_44af366a_f16a323c_texture,
+    image_be19488a_f8db5526.userData.eventName ="Buy Now"
+const image_44af366a_f166ccea_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
+   const image_44af366a_f166ccea_texture = await loadTexture("assets/Group 1261156644.png");
+  const image_44af366a_f166ccea_image = new THREE.MeshBasicMaterial({
+      map: image_44af366a_f166ccea_texture,
     });
-    const image_44af366a_f16a323c = new THREE.Mesh(image_44af366a_f16a323c_iconGeometry, image_44af366a_f16a323c_image);
-    image_44af366a_f16a323c.scale.set(0.4, 0.4, 1);
-    image_44af366a_f16a323c.position.set(-0.38, -0.57, 0.05);
-    image_44af366a_f16a323c.rotation.set(-0.001, 0, 0);
-    image_44af366a_f16a323c.userData.clickable = true
+    const image_44af366a_f166ccea = new THREE.Mesh(image_44af366a_f166ccea_iconGeometry, image_44af366a_f166ccea_image);
+    image_44af366a_f166ccea.scale.set(0.4, 0.4, 1);
+    image_44af366a_f166ccea.position.set(-0.38, -0.57, 0.05);
+    image_44af366a_f166ccea.rotation.set(-0.001, 0, 0);
+    image_44af366a_f166ccea.userData.clickable = true
     
-    image_44af366a_f16a323c.userData.eventName ="Adidas Website"
-const target_imageundefi70bc8_iconGeometry = new THREE.PlaneGeometry(1, 0.6185567010309279);
-   const target_imageundefi70bc8_texture = await loadTexture("assets/asfdgh.png");
-  const target_imageundefi70bc8_image = new THREE.MeshBasicMaterial({
-      map: target_imageundefi70bc8_texture,
+    image_44af366a_f166ccea.userData.eventName ="Adidas Website"
+const target_imageundefi7cf42_iconGeometry = new THREE.PlaneGeometry(1, 0.6185567010309279);
+   const target_imageundefi7cf42_texture = await loadTexture("assets/asfdgh.png");
+  const target_imageundefi7cf42_image = new THREE.MeshBasicMaterial({
+      map: target_imageundefi7cf42_texture,
     });
-    const target_imageundefi70bc8 = new THREE.Mesh(target_imageundefi70bc8_iconGeometry, target_imageundefi70bc8_image);
-    target_imageundefi70bc8.scale.set(1, 1, 1);
-    target_imageundefi70bc8.position.set(0.01, -0.01, 0.01);
-    target_imageundefi70bc8.rotation.set(-0.001, 0, 0);
+    const target_imageundefi7cf42 = new THREE.Mesh(target_imageundefi7cf42_iconGeometry, target_imageundefi7cf42_image);
+    target_imageundefi7cf42.scale.set(1, 1, 1);
+    target_imageundefi7cf42.position.set(0.01, -0.01, 0.01);
+    target_imageundefi7cf42.rotation.set(-0.001, 0, 0);
     
     
     
 
-    const video_asset_8ffbb0fd91c_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
+    const video_asset_8ffbb0c78f6_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
 
-    const video_asset_8ffbb0fd91c_Item0Video = await loadVideo("assets/T20 Cricket World Cup _ adidas x BCCI.mp4");
+    const video_asset_8ffbb0c78f6_Item0Video = await loadVideo("assets/T20 Cricket World Cup _ adidas x BCCI.mp4");
 
-    const video_asset_8ffbb0fd91c_Item0VideoTexture = new THREE.VideoTexture(
-      video_asset_8ffbb0fd91c_Item0Video
+    const video_asset_8ffbb0c78f6_Item0VideoTexture = new THREE.VideoTexture(
+      video_asset_8ffbb0c78f6_Item0Video
     );
 
-    let video_asset_8ffbb0fd91c_Item0VideoMaterial
+    let video_asset_8ffbb0c78f6_Item0VideoMaterial
 
-      video_asset_8ffbb0fd91c_Item0VideoMaterial = new THREE.MeshBasicMaterial({
-          map: video_asset_8ffbb0fd91c_Item0VideoTexture,
+      video_asset_8ffbb0c78f6_Item0VideoMaterial = new THREE.MeshBasicMaterial({
+          map: video_asset_8ffbb0c78f6_Item0VideoTexture,
         })
     
-     const video_asset_8ffbb0fd91c = new THREE.Mesh(
-      video_asset_8ffbb0fd91c_planeGeometry,
-      video_asset_8ffbb0fd91c_Item0VideoMaterial
+     const video_asset_8ffbb0c78f6 = new THREE.Mesh(
+      video_asset_8ffbb0c78f6_planeGeometry,
+      video_asset_8ffbb0c78f6_Item0VideoMaterial
     );
 
-  video_asset_8ffbb0fd91c.position.set(0, 0, 0.021);
+  video_asset_8ffbb0c78f6.position.set(0, 0, 0.021);
 
 
 
   if (isIOS) {
-    video_asset_8ffbb0fd91c_Item0Video.muted=isIOS
+    video_asset_8ffbb0c78f6_Item0Video.muted=isIOS
     muteIconMesh = await loadUnmuteLogo();
     anchor.group.add(muteIconMesh);
   }
 
-  video_asset_8ffbb0fd91c_Item0Video.loop=true;
+  video_asset_8ffbb0c78f6_Item0Video.loop=true;
   
-  video_asset_8ffbb0fd91c.scale.set(1.2, 1.2, 1.2);
+  video_asset_8ffbb0c78f6.scale.set(1.2, 1.2, 1.2);
 
-    video_asset_8ffbb0fd91c.rotation.set(-0.004, 0, 0);
+    video_asset_8ffbb0c78f6.rotation.set(-0.005, 0, 0);
 
     
   
@@ -258,7 +258,7 @@ const target_imageundefi70bc8_iconGeometry = new THREE.PlaneGeometry(1, 0.618556
 
         if(isIOS){ 
           if (o.userData.clickable && o === muteIconMesh) {
-            video_asset_8ffbb0fd91c_Item0Video.muted=false
+            video_asset_8ffbb0c78f6_Item0Video.muted=false
     
             anchor.group.remove(muteIconMesh);
             return true;
@@ -271,14 +271,14 @@ const target_imageundefi70bc8_iconGeometry = new THREE.PlaneGeometry(1, 0.618556
       if (o.userData.clickable) window.showLoadingScreen();
 
       
-      if (o.userData.clickable && o === image_be19488a_f8d1161a) {
+      if (o.userData.clickable && o === image_be19488a_f8db5526) {
         setTimeout(()=>{
-          window.location.href = "https://www.adidas.co.in/fw24-india-cricket-t20-international-jersey/JN0886.html"
+          window.location.href = "https://www.adidas.co.in/cricket"
         },100)
         }
       
 
-      if (o.userData.clickable && o === image_44af366a_f16a323c) {
+      if (o.userData.clickable && o === image_44af366a_f166ccea) {
         setTimeout(()=>{
           window.location.href = "https://www.adidas.co.in/"
         },100)
@@ -289,10 +289,10 @@ const target_imageundefi70bc8_iconGeometry = new THREE.PlaneGeometry(1, 0.618556
     })
     
       
-    anchor.group.add(image_be19488a_f8d1161a)
-anchor.group.add(image_44af366a_f16a323c)
+    anchor.group.add(image_be19488a_f8db5526)
+anchor.group.add(image_44af366a_f166ccea)
 
-anchor.group.add(video_asset_8ffbb0fd91c)
+anchor.group.add(video_asset_8ffbb0c78f6)
 
 
     anchor.onTargetFound = () => {
@@ -310,12 +310,12 @@ anchor.group.add(video_asset_8ffbb0fd91c)
 
 
      
-      video_asset_8ffbb0fd91c_Item0Video.play();
+      video_asset_8ffbb0c78f6_Item0Video.play();
     };
 
 
     anchor.onTargetLost = () => {
-       video_asset_8ffbb0fd91c_Item0Video.pause();
+       video_asset_8ffbb0c78f6_Item0Video.pause();
 
         
 
