@@ -152,31 +152,7 @@
 
   
     
-      const image_be19488a_f8db5526_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
-   const image_be19488a_f8db5526_texture = await loadTexture("assets/Group 1261156645.png");
-  const image_be19488a_f8db5526_image = new THREE.MeshBasicMaterial({
-      map: image_be19488a_f8db5526_texture,
-    });
-    const image_be19488a_f8db5526 = new THREE.Mesh(image_be19488a_f8db5526_iconGeometry, image_be19488a_f8db5526_image);
-    image_be19488a_f8db5526.scale.set(0.4, 0.4, 1);
-    image_be19488a_f8db5526.position.set(0.38, -0.574, 0.05);
-    image_be19488a_f8db5526.rotation.set(-0.001, 0, 0);
-    image_be19488a_f8db5526.userData.clickable = true
-    
-    image_be19488a_f8db5526.userData.eventName ="Buy Now"
-const image_44af366a_f166ccea_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
-   const image_44af366a_f166ccea_texture = await loadTexture("assets/Group 1261156644.png");
-  const image_44af366a_f166ccea_image = new THREE.MeshBasicMaterial({
-      map: image_44af366a_f166ccea_texture,
-    });
-    const image_44af366a_f166ccea = new THREE.Mesh(image_44af366a_f166ccea_iconGeometry, image_44af366a_f166ccea_image);
-    image_44af366a_f166ccea.scale.set(0.4, 0.4, 1);
-    image_44af366a_f166ccea.position.set(-0.38, -0.57, 0.05);
-    image_44af366a_f166ccea.rotation.set(-0.001, 0, 0);
-    image_44af366a_f166ccea.userData.clickable = true
-    
-    image_44af366a_f166ccea.userData.eventName ="Adidas Website"
-const target_imageundefi7cf42_iconGeometry = new THREE.PlaneGeometry(1, 0.6185567010309279);
+      const target_imageundefi7cf42_iconGeometry = new THREE.PlaneGeometry(1, 0.6185567010309279);
    const target_imageundefi7cf42_texture = await loadTexture("assets/asfdgh.png");
   const target_imageundefi7cf42_image = new THREE.MeshBasicMaterial({
       map: target_imageundefi7cf42_texture,
@@ -226,6 +202,30 @@ const target_imageundefi7cf42_iconGeometry = new THREE.PlaneGeometry(1, 0.618556
 
     
   
+const image_a73508ff_1d91d9bb_iconGeometry = new THREE.PlaneGeometry(1, 1);
+   const image_a73508ff_1d91d9bb_texture = await loadTexture("assets/amazon-logo.png");
+  const image_a73508ff_1d91d9bb_image = new THREE.MeshBasicMaterial({
+      map: image_a73508ff_1d91d9bb_texture,
+    });
+    const image_a73508ff_1d91d9bb = new THREE.Mesh(image_a73508ff_1d91d9bb_iconGeometry, image_a73508ff_1d91d9bb_image);
+    image_a73508ff_1d91d9bb.scale.set(0.3, 0.3, 0.3);
+    image_a73508ff_1d91d9bb.position.set(0.3, -0.6, 0);
+    image_a73508ff_1d91d9bb.rotation.set(-0.001, 0, 0);
+    image_a73508ff_1d91d9bb.userData.clickable = true
+    
+    image_a73508ff_1d91d9bb.userData.eventName ="Amazon"
+const image_ac1b37c2_ca9ca995_iconGeometry = new THREE.PlaneGeometry(1, 1);
+   const image_ac1b37c2_ca9ca995_texture = await loadTexture("assets/ajio-logo.jpg");
+  const image_ac1b37c2_ca9ca995_image = new THREE.MeshBasicMaterial({
+      map: image_ac1b37c2_ca9ca995_texture,
+    });
+    const image_ac1b37c2_ca9ca995 = new THREE.Mesh(image_ac1b37c2_ca9ca995_iconGeometry, image_ac1b37c2_ca9ca995_image);
+    image_ac1b37c2_ca9ca995.scale.set(0.3, 0.3, 0.3);
+    image_ac1b37c2_ca9ca995.position.set(-0.3, -0.6, 0.04);
+    image_ac1b37c2_ca9ca995.rotation.set(-0.001, 0, 0);
+    image_ac1b37c2_ca9ca995.userData.clickable = true
+    
+    image_ac1b37c2_ca9ca995.userData.eventName ="Ajio"
       
        document.body.addEventListener("click", (e) => {
     const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
@@ -271,16 +271,16 @@ const target_imageundefi7cf42_iconGeometry = new THREE.PlaneGeometry(1, 0.618556
       if (o.userData.clickable) window.showLoadingScreen();
 
       
-      if (o.userData.clickable && o === image_be19488a_f8db5526) {
+      if (o.userData.clickable && o === image_a73508ff_1d91d9bb) {
         setTimeout(()=>{
-          window.location.href = "https://lttl.in/EIr11bJ"
+          window.location.href = "https://www.amazon.in/Adidas-Geometric-Regular-T-Shirt-JI6696_Bright/dp/B0CJFMS39T/ref=sr_1_1?crid=3U9FJQGWB0VU5&dib=eyJ2IjoiMSJ9.EusWyQFF7OnrDeapJQWhhlcTJm7iyaTQkDfbzVXc9pedgs5spbK1jBxBb74f23ExYSTB6jFZvsMaBQaFHDbq48KLZ7XJpegCWC8DB_o6ugAL0HJSRJ33ekXeSVP0WihWdlmdY9XOGUAhjozcTQ8vJnsrkYOPTPjs1dO1Bf00NpadxoK5vgsU2_ogOw0RO3THZ8rfvjFGSJyIrAjiU8px9OLmhMXkBh4SGH0DnGVeMVGoidRPqLC3sBWneBnF7dcaAEFPAqEbjluEFyBlzuDPYxjBFyl0aX--SZCE_lD-xl0.4tw9u1GOVoMXtxAGzMAMF4EK3GsL-VKoPcK2ma2x2_k&dib_tag=se&keywords=adidas%2Bcricket%2Bjersey&qid=1720436108&sprefix=adidas%2Bcricket%2B%2Caps%2C285&sr=8-1&th=1&psc=1"
         },100)
         }
       
 
-      if (o.userData.clickable && o === image_44af366a_f166ccea) {
+      if (o.userData.clickable && o === image_ac1b37c2_ca9ca995) {
         setTimeout(()=>{
-          window.location.href = "https://lttl.in/FLr66bD"
+          window.location.href = "https://www.ajio.com/shop/brand-adidas"
         },100)
         }
       
@@ -289,10 +289,10 @@ const target_imageundefi7cf42_iconGeometry = new THREE.PlaneGeometry(1, 0.618556
     })
     
       
-    anchor.group.add(image_be19488a_f8db5526)
-anchor.group.add(image_44af366a_f166ccea)
-
+    
 anchor.group.add(video_asset_8ffbb0c78f6)
+anchor.group.add(image_a73508ff_1d91d9bb)
+anchor.group.add(image_ac1b37c2_ca9ca995)
 
 
     anchor.onTargetFound = () => {
@@ -306,8 +306,11 @@ anchor.group.add(video_asset_8ffbb0c78f6)
 
             
 
+                  executeAnimation({"name":"none","state":"none","value":0,"duration":2000,"delay":1000,"event":"load"}, video_asset_8ffbb0c78f6)
 
+                  executeAnimation({"name":"scale","state":"scale","value":-1.5,"duration":0,"delay":0,"event":"load"}, image_a73508ff_1d91d9bb)
 
+                  executeAnimation({"name":"scale","state":"scale","value":-1.5,"duration":0,"delay":0,"event":"load"}, image_ac1b37c2_ca9ca995)
 
      
       video_asset_8ffbb0c78f6_Item0Video.play();
@@ -318,9 +321,9 @@ anchor.group.add(video_asset_8ffbb0c78f6)
        video_asset_8ffbb0c78f6_Item0Video.pause();
 
         
-
-
-
+animationManager.resetObject(name)
+animationManager.resetObject(name)
+animationManager.resetObject(name)
     }
     
     
