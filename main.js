@@ -273,14 +273,14 @@ const target_imageundefi7cf42_iconGeometry = new THREE.PlaneGeometry(1, 0.618556
       
       if (o.userData.clickable && o === image_be19488a_f8db5526) {
         setTimeout(()=>{
-          window.location.href = "https://www.adidas.co.in/cricket"
+          window.location.href = "https://lttl.in/EIr11bJ"
         },100)
         }
       
 
       if (o.userData.clickable && o === image_44af366a_f166ccea) {
         setTimeout(()=>{
-          window.location.href = "https://www.adidas.co.in/"
+          window.location.href = "https://lttl.in/FLr66bD"
         },100)
         }
       
